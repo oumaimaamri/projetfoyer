@@ -20,9 +20,8 @@ public class EtudiantService implements IEtudiantService{
     @Override
     public Etudiant addEtudiant(Etudiant etudiant) {
         return etudiantRepository.save(etudiant);
-
-
     }
+
     @Override
     public List<Etudiant> getAllEtudiants() {
         return (List<Etudiant>) etudiantRepository.findAll();
